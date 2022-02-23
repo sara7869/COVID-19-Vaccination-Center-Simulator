@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FormController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <AnchorPane prefHeight="625.0" prefWidth="400.0" style="-fx-background-color: #87CEFA; -fx-border-color: #9370DB; -fx-border-width: 4; -fx-border-style: dashed;">
+      <TextField fx:id="fNameTxt" layoutX="209.0" layoutY="112.0" />
+      <TextField fx:id="vaccineTxt" layoutX="209.0" layoutY="363.0" />
+      <TextField fx:id="surnameTxt" layoutX="209.0" layoutY="161.0" />
+      <TextField fx:id="ageTxt" layoutX="209.0" layoutY="212.0" />
+      <TextField fx:id="cityTxt" layoutX="209.0" layoutY="262.0" />
+      <TextField fx:id="nicOrPassportTxt" layoutX="209.0" layoutY="314.0" />
+      <Label layoutX="122.0" layoutY="42.0" text="Patient Details" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="117.0" text="First Name :" />
+      <Label layoutX="35.0" layoutY="166.0" text="Surname :" />
+      <Label layoutX="35.0" layoutY="217.0" text="Age :" />
+      <Label layoutX="35.0" layoutY="267.0" text="City :" />
+      <Label layoutX="35.0" layoutY="319.0" text="NIC or Passport Number :" />
+      <Label layoutX="35.0" layoutY="368.0" text="Vaccination Request :" />
+      <Button fx:id="closeFormAndGenerateReceiptButton" layoutX="257.0" layoutY="573.0" mnemonicParsing="false" onAction="#closeFormAndGenerateReceipt" style="-fx-background-color: #FC89AC;" text="Generate Receipt" />
+      <Label layoutX="34.0" layoutY="419.0" text="Booth number Issued :" />
+      <TextField fx:id="boothTxt" layoutX="209.0" layoutY="414.0" />
+      <TextField fx:id="dateTxt" layoutX="209.0" layoutY="470.0" />
+      <TextField fx:id="timeTxt" layoutX="209.0" layoutY="523.0" />
+      <Label layoutX="35.0" layoutY="475.0" text="Date :" />
+      <Label layoutX="34.0" layoutY="528.0" text="Time :" />
+      <Label fx:id="tempLabel" layoutX="50" layoutY="400"/>
+
+   </AnchorPane>
+</GridPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReceiptController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #87CEFA; -fx-border-color: #9370DB; -fx-border-width: 4; -fx-border-style: dashed;">
+        <Label layoutX="159.0" layoutY="28.0" text="Receipt" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="35.0" layoutY="117.0" text="First Name :" />
+        <Label layoutX="35.0" layoutY="166.0" text="Surname :" />
+        <Label layoutX="35.0" layoutY="217.0" text="Age :" />
+        <Label layoutX="35.0" layoutY="267.0" text="City :" />
+        <Label layoutX="35.0" layoutY="319.0" text="NIC or Passport Number :" />
+        <Label layoutX="35.0" layoutY="368.0" text="Vaccination Request :" />
+        <Label layoutX="34.0" layoutY="419.0" text="Booth number Issued :" />
+        <Label fx:id="fNameLabel" layoutX="264.0" layoutY="117.0" />
+        <Label fx:id="surnameLabel" layoutX="264.0" layoutY="166.0" />
+        <Label fx:id="ageLabel" layoutX="264.0" layoutY="217.0" />
+        <Label fx:id="cityLabel" layoutX="264.0" layoutY="267.0" />
+        <Label fx:id="nicOrPassportLabel" layoutX="264.0" layoutY="319.0" />
+        <Label fx:id="vaccineLabel" layoutX="264.0" layoutY="368.0" />
+        <Label fx:id="boothLabel" layoutX="264.0" layoutY="419.0" />
+        <Label fx:id="dateLabel" alignment="CENTER" layoutX="63.0" layoutY="82.0" prefHeight="17.0" prefWidth="120.0" />
+        <Label fx:id="timeLabel" alignment="CENTER" layoutX="264.0" layoutY="82.0" prefHeight="17.0" prefWidth="120.0" />
+      <Label layoutX="19.0" layoutY="82.0" text="Date :" />
+      <Label layoutX="200.0" layoutY="82.0" text="Time :" />
+    </AnchorPane>
+</GridPane>
